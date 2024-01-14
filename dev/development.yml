@@ -14,6 +14,6 @@ spec:
       spec:
         containers:
         - name: myapp
-          image: nanajanashie/arcocd-app:1.0 # put the image you want for deploy
+          image: nanajanashia/argocd-app:1.2 # put the image you want for deploy
           ports:
           - containerPort: 8080
