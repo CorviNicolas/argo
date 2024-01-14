@@ -1,5 +1,6 @@
 # in local
-install and run minikube to run k8 test cluster
+- install kubectl
+- install and run minikube to run k8 test cluster
 
 # install ArgoCD in k8s
 kubectl create namespace argocd
@@ -14,6 +15,9 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 
 # you can change and delete init password
 
+# for the first time:
+you need to apply the application.yml with kubectl
+kubectl apply -f application.yml
 
 application.yml = argocd configuration
 For different environments, create new folders. In this case we only have dev
